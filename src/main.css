@@ -120,7 +120,7 @@ ul {
 /* Utility Classes */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 var(--space-md);
 }
@@ -249,7 +249,7 @@ ul {
 
 /* Enhanced Navbar */
 .navbar {
-  padding: 1.5rem 2rem;
+  /* padding: 1.5rem 2rem; */
   transition: var(--transition);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
@@ -258,7 +258,7 @@ ul {
 }
 
 .navbar.scrolled {
-  padding: 1rem 2rem;
+  /* padding: 1rem 2rem; */
   background: var(--darker-bg) !important;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
@@ -275,8 +275,8 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 60px;
+  height: 60px;
   background: linear-gradient(135deg, var(--accent-color), var(--accent-hover));
   color: var(--text-primary);
   border-radius: var(--border-radius);
@@ -582,7 +582,7 @@ ul {
 
 .hero-content {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .hero-badge {
@@ -593,7 +593,7 @@ ul {
   border-radius: var(--border-radius);
   font-size: 0.875rem;
   font-weight: 600;
-  margin-bottom: 1.5rem;
+  margin-top: 1.8rem;
   border: 1px solid var(--border-color);
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
