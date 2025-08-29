@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Ashley K Motsie - Innovative Full Stack Developer creating modern web experiences with React, Node.js, and cloud technologies. Explore my portfolio of cutting-edge projects.">
+    <meta name="keywords" content="Ashley Motsie, Full Stack Developer, Web Development, React, Node.js, Portfolio">
+    <meta name="author" content="Ashley K Motsie">
     <title>Ashley K Motsie | Software Developer</title>
 
     <!-- Mobile responsiveness tags -->
@@ -35,7 +37,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="assets/favicon/site.webmanifest">
 
-    <!-- Theme color for mobile browsers -->
+    <!-- Theme color -->
     <meta name="theme-color" content="#0f172a">
     <meta name="msapplication-TileColor" content="#0f172a">
 </head>
@@ -54,17 +56,15 @@
             <div class="preloader-progress"></div>
         </div>
     </div>
-    <!-- Floating Particles Background -->
-    <div id="particles-js"></div>
 
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#" aria-label="Home">
                 <img class="logo-icon" src="logo_images/Logo.png" alt="Ashley K Motsie Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                title="Toggle navigation" aria-label="Toggle navigation">
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -77,7 +77,7 @@
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item">
                         <a href="/assets/Ashley Motsie's Resume_20250807_043908_0000.pdf" class="btn-resume"
-                            download="Ashley_Motsie_Resume.pdf">
+                            download="Ashley_Motsie_Resume.pdf" aria-label="Download Resume">
                             Resume <i class="fas fa-download"></i>
                         </a>
                     </li>
@@ -86,28 +86,27 @@
         </div>
     </nav>
 
-    <!-- Hero Section with Enhanced Structure -->
+    <!-- Hero Section -->
     <section id="hero" class="hero-section">
         <div id="particles-js"></div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
-                    <div class="hero-content">
+                    <div class="hero-content animate__animated animate__fadeInUp">
                         <div class="hero-badge">
                             <span>Full-Stack Developer</span>
                         </div>
                         <h1 class="hero-title">
-                            <span class="wave-emoji"></span> Hi, I'm <span class="text-gradient">Ashley K Motsie</span>
+                            <span class="wave-emoji" role="img" aria-label="Waving hand">👋</span> Hi, I'm <span
+                                class="text-gradient">Ashley K Motsie</span>
                         </h1>
                         <h2 class="hero-subtitle">
                             My profession is <span class="typing-text"></span>
                         </h2>
                         <p class="hero-description">
-                            I architect and develop full-stack web
-                            applications with a focus on performance,
-                            accessibility, and cutting-edge technologies.
-                            Currently enhancing my skills in
-                            cloud computing and AI integration.
+                            I architect and develop full-stack web applications with a focus on performance,
+                            accessibility, and cutting-edge technologies. Currently enhancing my skills in cloud
+                            computing and AI integration.
                         </p>
                         <div class="hero-cta">
                             <a href="#projects" class="btn btn-primary" id="viewWorkBtn">
@@ -134,39 +133,34 @@
                     </div>
                 </div>
                 <div class="col-lg-6 position-relative">
-                    <div class="hero-image-wrapper">
+                    <div class="hero-image-wrapper animate__animated animate__fadeInRight">
                         <div class="profile-image-container">
-                            <img src="profile_images/Me.jpg" alt="Ashley K Motsie" class="profile-image">
+                            <img src="profile_images/Me.jpg" alt="Ashley K Motsie" class="profile-image" loading="lazy">
                             <div class="profile-glow"></div>
                             <div class="tech-icons">
-                                <!-- Your tech icons here -->
-                                <div class="tech-icons">
-                                    <div class="icon react" data-tooltip="React">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                                            alt="React">
-                                    </div>
-                                    <div class="icon js" data-tooltip="JavaScript">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                            alt="JavaScript">
-                                    </div>
-                                    <div class="icon mongodb" data-tooltip="MongoDB">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                                            alt="MongoDB">
-                                    </div>
-                                    <div class="icon python" data-tooltip="Python">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                                            alt="Python">
-                                    </div>
+                                <div class="icon react" data-tooltip="React">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                        alt="React" loading="lazy">
+                                </div>
+                                <div class="icon js" data-tooltip="JavaScript">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                        alt="JavaScript" loading="lazy">
+                                </div>
+                                <div class="icon mongodb" data-tooltip="MongoDB">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                                        alt="MongoDB" loading="lazy">
+                                </div>
+                                <div class="icon python" data-tooltip="Python">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                        alt="Python" loading="lazy">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Animated scroll indicator -->
             <div class="scroll-indicator">
-                <a href="#about" aria-label="Scroll down">
+                <a href="#about" aria-label="Scroll to About section">
                     <div class="mouse">
                         <div class="wheel"></div>
                     </div>
@@ -177,6 +171,7 @@
                     </div>
                 </a>
             </div>
+        </div>
     </section>
 
     <!-- About Section -->
@@ -186,166 +181,126 @@
                 <h2 class="section-title">About Me</h2>
                 <div class="divider"></div>
             </div>
-
             <div class="row align-items-center">
                 <div class="col-lg-5 about-image-col">
                     <div class="about-image-wrapper">
-                        <img src="profile_images/Me.jpg" alt="Ashley K Motsie" class="about-image">
+                        <img src="profile_images/Me.jpg" alt="Ashley K Motsie" class="about-image" loading="lazy">
                         <div class="about-image-bg"></div>
                         <div class="about-experience">
                             <div class="exp-number">4+</div>
-                            <div class="exp-text">Years
-                                of<br>Experience</div>
+                            <div class="exp-text">Years of<br>Experience</div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-7 about-content">
                     <h3>Who am I?</h3>
                     <p>
-                        I'm Ashley Motsie, a passionate
-                        <strong>Developer</strong> based in <em>South
-                            Africa </em>
-                        with expertise in building efficient,
-                        user-friendly modern web applications.
-                        My journey in tech has been driven by curiosity
-                        and a desire to
-                        solve complex problems through innovative
-                        solutions.
+                        I'm Ashley Motsie, a passionate <strong>Developer</strong> based in <em>South Africa</em> with
+                        expertise in building efficient, user-friendly modern web applications. My journey in tech has
+                        been driven by curiosity and a desire to solve complex problems through innovative solutions.
                     </p>
-
                     <div class="about-tabs">
                         <ul class="nav nav-tabs" id="aboutTabs" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="skills-tab" data-bs-toggle="tab"
-                                    data-bs-target="#skills-tab-pane" type="button">
+                                    data-bs-target="#skills-tab-pane" type="button" aria-controls="skills-tab-pane"
+                                    aria-selected="true">
                                     <i class="fas fa-code"></i> Skills
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="education-tab" data-bs-toggle="tab"
-                                    data-bs-target="#education-tab-pane" type="button">
+                                    data-bs-target="#education-tab-pane" type="button"
+                                    aria-controls="education-tab-pane" aria-selected="false">
                                     <i class="fas fa-route"></i> Journey
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link" id="hobbies-tab" data-bs-toggle="tab"
-                                    data-bs-target="#hobbies-tab-pane" type="button">
-                                    <i class="fas fa-heart"></i>
-                                    Interests
+                                    data-bs-target="#hobbies-tab-pane" type="button" aria-controls="hobbies-tab-pane"
+                                    aria-selected="false">
+                                    <i class="fas fa-heart"></i> Interests
                                 </button>
                             </li>
                         </ul>
                         <div class="tab-content" id="aboutTabsContent">
-                            <div class="tab-pane fade show active" id="skills-tab-pane" role="tabpanel">
+                            <div class="tab-pane fade show active" id="skills-tab-pane" role="tabpanel"
+                                aria-labelledby="skills-tab">
                                 <div class="skills-list">
                                     <div class="skill-item">
-                                        <div class="skill-name">Frontend
-                                            Development</div>
+                                        <div class="skill-name">Frontend Development</div>
                                         <div class="skill-level">
                                             <div class="level-bar" style="width: 90%"></div>
                                         </div>
                                     </div>
                                     <div class="skill-item">
-                                        <div class="skill-name">Backend
-                                            Development</div>
+                                        <div class="skill-name">Backend Development</div>
                                         <div class="skill-level">
                                             <div class="level-bar" style="width: 95%"></div>
                                         </div>
                                     </div>
                                     <div class="skill-item">
-                                        <div class="skill-name">AI
-                                            Integration</div>
+                                        <div class="skill-name">AI Integration</div>
                                         <div class="skill-level">
                                             <div class="level-bar" style="width: 75%"></div>
                                         </div>
                                     </div>
                                     <div class="skill-item">
-                                        <div class="skill-name">Chatbots
-                                            Development</div>
+                                        <div class="skill-name">Chatbots Development</div>
                                         <div class="skill-level">
                                             <div class="level-bar" style="width: 75%"></div>
                                         </div>
                                     </div>
                                     <div class="skill-item">
-                                        <div class="skill-name">Cloud
-                                            Computing</div>
+                                        <div class="skill-name">Cloud Computing</div>
                                         <div class="skill-level">
                                             <div class="level-bar" style="width: 65%"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="education-tab-pane" role="tabpanel">
+                            <div class="tab-pane fade" id="education-tab-pane" role="tabpanel"
+                                aria-labelledby="education-tab">
                                 <div class="timeline">
                                     <div class="timeline-item">
                                         <div class="timeline-date">2022</div>
                                         <div class="timeline-content">
                                             <h4>Started Coding</h4>
-                                            <p>
-                                                Began my coding journey
-                                                with Visual Basic
-                                                (VB.NET), HTML, CSS, and
-                                                JavaScript,
-                                                building simple desktop
-                                                and web apps and diving
-                                                into the world of
-                                                programming.
-                                            </p>
+                                            <p>Began my coding journey with Visual Basic (VB.NET), HTML, CSS, and
+                                                JavaScript, building simple desktop and web apps and diving into the
+                                                world of programming.</p>
                                         </div>
                                     </div>
                                     <div class="timeline-item">
                                         <div class="timeline-date">2023</div>
                                         <div class="timeline-content">
-                                            <h4>First e-commerce Web
-                                                Project</h4>
-                                            <p>
-                                                Developed my first
-                                                website using PHP, HTML,
-                                                CSS, and JavaScript,
-                                                sparking a passion for
-                                                web development.
-                                            </p>
+                                            <h4>First e-commerce Web Project</h4>
+                                            <p>Developed my first website using PHP, HTML, CSS, and JavaScript, sparking
+                                                a passion for web development.</p>
                                         </div>
                                     </div>
                                     <div class="timeline-item">
                                         <div class="timeline-date">2024</div>
                                         <div class="timeline-content">
-                                            <h4>Frontend
-                                                Development</h4>
-                                            <p>
-                                                Started leveraging
-                                                frontend technologies,
-                                                delivering responsive
-                                                web applications for
-                                                local businesses and
-                                                clients.
-                                            </p>
+                                            <h4>Frontend Development</h4>
+                                            <p>Started leveraging frontend technologies, delivering responsive web
+                                                applications for local businesses and clients.</p>
                                         </div>
                                     </div>
                                     <div class="timeline-item">
                                         <div class="timeline-date">2025</div>
                                         <div class="timeline-content">
-                                            <h4>full-stack
-                                                Development</h4>
-                                            <p>
-                                                Started a full-stack
-                                                development internship,
-                                                building end-to-end
-                                                solutions with
-                                                React, Django, Tailwind
-                                                CSS, Node.js, and
-                                                MongoDB. <br>
-                                                Mid July 2025 joined AI
-                                                Global Networks -
-                                                Building scalable
-                                                applications with
-                                                integrated AI features.
-                                            </p>
+                                            <h4>Full-Stack Development</h4>
+                                            <p>Started a full-stack development internship, building end-to-end
+                                                solutions with React, Django, Tailwind CSS, Node.js, and MongoDB. <br>
+                                                Mid July 2025 joined AI Global Networks - Building scalable applications
+                                                with integrated AI features.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="hobbies-tab-pane" role="tabpanel">
+                            <div class="tab-pane fade" id="hobbies-tab-pane" role="tabpanel"
+                                aria-labelledby="hobbies-tab">
                                 <div class="hobbies-grid">
                                     <div class="hobby-item">
                                         <i class="fas fa-laptop-code"></i>
@@ -375,11 +330,9 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="about-cta">
                         <a href="#contact" class="btn btn-primary me-3">Hire Me</a>
-                        <a href="#projects" class="btn btn-outline">View
-                            Projects</a>
+                        <a href="#projects" class="btn btn-outline">View Projects</a>
                     </div>
                 </div>
             </div>
@@ -393,50 +346,46 @@
                 <h2 class="section-title">Technical Skills</h2>
                 <div class="divider"></div>
             </div>
-
             <div class="skills-tabs">
                 <ul class="nav nav-pills mb-5" id="skillsTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="frontend-tab" data-bs-toggle="pill"
-                            data-bs-target="#frontend" type="button">
+                            data-bs-target="#frontend" type="button" aria-controls="frontend" aria-selected="true">
                             <i class="fas fa-laptop-code"></i> Frontend
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="backend-tab" data-bs-toggle="pill" data-bs-target="#backend"
-                            type="button">
+                            type="button" aria-controls="backend" aria-selected="false">
                             <i class="fas fa-server"></i> Backend
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="tools-tab" data-bs-toggle="pill" data-bs-target="#tools"
-                            type="button">
+                            type="button" aria-controls="tools" aria-selected="false">
                             <i class="fas fa-tools"></i> Tools
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="learning-tab" data-bs-toggle="pill" data-bs-target="#learning"
-                            type="button">
+                            type="button" aria-controls="learning" aria-selected="false">
                             <i class="fas fa-rocket"></i> Learning
                         </button>
                     </li>
                 </ul>
-
                 <div class="tab-content" id="skillsTabContent">
                     <!-- Frontend Skills -->
-                    <div class="tab-pane fade show active" id="frontend" role="tabpanel">
+                    <div class="tab-pane fade show active" id="frontend" role="tabpanel" aria-labelledby="frontend-tab">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="skill-card">
                                     <div class="skill-icon">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                                            alt="React">
+                                            alt="React" loading="lazy">
                                     </div>
                                     <div class="skill-info">
                                         <h4>React.js</h4>
-                                        <p>Building interactive UIs with
-                                            React hooks, context API,
-                                            and Redux</p>
+                                        <p>Building interactive UIs with React hooks, context API, and Redux</p>
                                         <div class="skill-progress">
                                             <div class="progress-bar" style="width: 90%"></div>
                                         </div>
@@ -447,13 +396,11 @@
                                 <div class="skill-card">
                                     <div class="skill-icon">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                            alt="JavaScript">
+                                            alt="JavaScript" loading="lazy">
                                     </div>
                                     <div class="skill-info">
                                         <h4>JavaScript (ES6+)</h4>
-                                        <p>Modern JavaScript with
-                                            functional programming
-                                            concepts</p>
+                                        <p>Modern JavaScript with functional programming concepts</p>
                                         <div class="skill-progress">
                                             <div class="progress-bar" style="width: 85%"></div>
                                         </div>
@@ -464,12 +411,11 @@
                                 <div class="skill-card">
                                     <div class="skill-icon">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-                                            alt="Bootstrap">
+                                            alt="Bootstrap" loading="lazy">
                                     </div>
                                     <div class="skill-info">
                                         <h4>Bootstrap</h4>
-                                        <p>Responsive CSS framework for
-                                            rapid UI development</p>
+                                        <p>Responsive CSS framework for rapid UI development</p>
                                         <div class="skill-progress">
                                             <div class="progress-bar" style="width: 85%"></div>
                                         </div>
@@ -480,12 +426,11 @@
                                 <div class="skill-card">
                                     <div class="skill-icon">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-                                            alt="Tailwind CSS">
+                                            alt="Tailwind CSS" loading="lazy">
                                     </div>
                                     <div class="skill-info">
                                         <h4>Tailwind CSS</h4>
-                                        <p>Utility-first CSS framework
-                                            for rapid UI development</p>
+                                        <p>Utility-first CSS framework for rapid UI development</p>
                                         <div class="skill-progress">
                                             <div class="progress-bar" style="width: 85%"></div>
                                         </div>
@@ -494,20 +439,18 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Backend Skills -->
-                    <div class="tab-pane fade" id="backend" role="tabpanel">
+                    <div class="tab-pane fade" id="backend" role="tabpanel" aria-labelledby="backend-tab">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="skill-card">
                                     <div class="skill-icon">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
-                                            alt="Flask">
+                                            alt="Flask" loading="lazy">
                                     </div>
                                     <div class="skill-info">
                                         <h4>Flask</h4>
-                                        <p>Building lightweight web
-                                            applications and APIs</p>
+                                        <p>Building lightweight web applications and APIs</p>
                                         <div class="skill-progress">
                                             <div class="progress-bar" style="width: 80%"></div>
                                         </div>
@@ -518,12 +461,11 @@
                                 <div class="skill-card">
                                     <div class="skill-icon">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                                            alt="MongoDB">
+                                            alt="MongoDB" loading="lazy">
                                     </div>
                                     <div class="skill-info">
                                         <h4>MongoDB</h4>
-                                        <p>NoSQL database design and
-                                            implementation</p>
+                                        <p>NoSQL database design and implementation</p>
                                         <div class="skill-progress">
                                             <div class="progress-bar" style="width: 80%"></div>
                                         </div>
@@ -534,13 +476,11 @@
                                 <div class="skill-card">
                                     <div class="skill-icon">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-                                            alt="PostgreSQL">
+                                            alt="PostgreSQL" loading="lazy">
                                     </div>
                                     <div class="skill-info">
                                         <h4>PostgreSQL</h4>
-                                        <p>Relational database
-                                            management and query
-                                            optimization</p>
+                                        <p>Relational database management and query optimization</p>
                                         <div class="skill-progress">
                                             <div class="progress-bar" style="width: 75%"></div>
                                         </div>
@@ -551,12 +491,11 @@
                                 <div class="skill-card">
                                     <div class="skill-icon">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
-                                            alt="Django">
+                                            alt="Django" loading="lazy">
                                     </div>
                                     <div class="skill-info">
                                         <h4>Django</h4>
-                                        <p>Building efficient Web Apps
-                                            with Django framework</p>
+                                        <p>Building efficient Web Apps with Django framework</p>
                                         <div class="skill-progress">
                                             <div class="progress-bar" style="width: 70%"></div>
                                         </div>
@@ -565,21 +504,18 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Tools -->
-                    <div class="tab-pane fade" id="tools" role="tabpanel">
+                    <div class="tab-pane fade" id="tools" role="tabpanel" aria-labelledby="tools-tab">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="skill-card">
                                     <div class="skill-icon">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                                            alt="Git">
+                                            alt="Git" loading="lazy">
                                     </div>
                                     <div class="skill-info">
                                         <h4>Git & GitHub</h4>
-                                        <p>Version control and
-                                            collaborative
-                                            development</p>
+                                        <p>Version control and collaborative development</p>
                                         <div class="skill-progress">
                                             <div class="progress-bar" style="width: 90%"></div>
                                         </div>
@@ -590,12 +526,11 @@
                                 <div class="skill-card">
                                     <div class="skill-icon">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
-                                            alt="Docker">
+                                            alt="Docker" loading="lazy">
                                     </div>
                                     <div class="skill-info">
                                         <h4>Docker</h4>
-                                        <p>Containerization and
-                                            deployment workflows</p>
+                                        <p>Containerization and deployment workflows</p>
                                         <div class="skill-progress">
                                             <div class="progress-bar" style="width: 75%"></div>
                                         </div>
@@ -606,12 +541,11 @@
                                 <div class="skill-card">
                                     <div class="skill-icon">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                                            alt="Figma">
+                                            alt="Figma" loading="lazy">
                                     </div>
                                     <div class="skill-info">
                                         <h4>Figma</h4>
-                                        <p>UI/UX design and
-                                            prototyping</p>
+                                        <p>UI/UX design and prototyping</p>
                                         <div class="skill-progress">
                                             <div class="progress-bar" style="width: 60%"></div>
                                         </div>
@@ -622,12 +556,11 @@
                                 <div class="skill-card">
                                     <div class="skill-icon">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-                                            alt="VS Code">
+                                            alt="VS Code" loading="lazy">
                                     </div>
                                     <div class="skill-info">
                                         <h4>VS Code</h4>
-                                        <p>Primary code editor with
-                                            extensive extensions</p>
+                                        <p>Primary code editor with extensive extensions</p>
                                         <div class="skill-progress">
                                             <div class="progress-bar" style="width: 95%"></div>
                                         </div>
@@ -636,20 +569,18 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Currently Learning -->
-                    <div class="tab-pane fade" id="learning" role="tabpanel">
+                    <div class="tab-pane fade" id="learning" role="tabpanel" aria-labelledby="learning-tab">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="skill-card">
                                     <div class="skill-icon">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
-                                            alt="AWS">
+                                            alt="AWS" loading="lazy">
                                     </div>
                                     <div class="skill-info">
                                         <h4>AWS</h4>
-                                        <p>Cloud infrastructure and
-                                            serverless architecture</p>
+                                        <p>Cloud infrastructure and serverless architecture</p>
                                         <div class="skill-progress">
                                             <div class="progress-bar learning" style="width: 55%"></div>
                                         </div>
@@ -660,13 +591,11 @@
                                 <div class="skill-card">
                                     <div class="skill-icon">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
-                                            alt="Azure">
+                                            alt="Azure" loading="lazy">
                                     </div>
                                     <div class="skill-info">
                                         <h4>Microsoft Azure</h4>
-                                        <p>Cloud infrastructure and
-                                            services on Microsoft's
-                                            platform</p>
+                                        <p>Cloud infrastructure and services on Microsoft's platform</p>
                                         <div class="skill-progress">
                                             <div class="progress-bar learning" style="width: 55%"></div>
                                         </div>
@@ -677,12 +606,11 @@
                                 <div class="skill-card">
                                     <div class="skill-icon">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                                            alt="Python">
+                                            alt="Python" loading="lazy">
                                     </div>
                                     <div class="skill-info">
                                         <h4>Python</h4>
-                                        <p>Scripting and backend
-                                            development</p>
+                                        <p>Scripting and backend development</p>
                                         <div class="skill-progress">
                                             <div class="progress-bar learning" style="width: 90%"></div>
                                         </div>
@@ -693,12 +621,11 @@
                                 <div class="skill-card">
                                     <div class="skill-icon">
                                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
-                                            alt="C">
+                                            alt="C" loading="lazy">
                                     </div>
                                     <div class="skill-info">
                                         <h4>C</h4>
-                                        <p>Systems programming and
-                                            algorithms</p>
+                                        <p>Systems programming and algorithms</p>
                                         <div class="skill-progress">
                                             <div class="progress-bar learning" style="width: 65%"></div>
                                         </div>
@@ -720,125 +647,100 @@
                 <h2 class="section-title">Featured Projects</h2>
                 <div class="divider"></div>
                 <p class="section-description">
-                    Here are some of my recent projects. Each one was
-                    built to solve specific problems
-                    and showcase different aspects of my technical
-                    skills.
+                    Here are some of my recent projects. Each one was built to solve specific problems and showcase
+                    different aspects of my technical skills.
                 </p>
             </div>
-
             <div class="projects-filter">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="frontend">Frontend</button>
                 <button class="filter-btn" data-filter="backend">Backend</button>
-                <button class="filter-btn" data-filter="fullstack">Full
-                    Stack</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
                 <button class="filter-btn" data-filter="design">UI/UX</button>
             </div>
-
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card" data-category="fullstack">
                     <div class="project-image">
-                        <img src="project_images/Screenshot_21.png" alt="Temperature Converter Project">
+                        <img src="project_images/Screenshot_21.png" alt="Temperature Converter Project" loading="lazy">
                         <div class="project-links">
                             <a href="https://my-web-app-temperature-conveter.vercel.app/" class="project-link"
-                                aria-label="Live Demo" target="_blank">
+                                aria-label="Live Demo" target="_blank" rel="noopener noreferrer">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                             <a href="https://github.com/Ashley-Programmer/web_app_temp_conveter" class="project-link"
-                                aria-label="View Code" target="_blank">
+                                aria-label="View Code" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
                     <div class="project-info">
                         <h3>Temperature Converter</h3>
-                        <p>
-                            A web app temperature converter solution,
-                            built for accurate weather conversions,
-                            scalability and performance.
-                        </p>
+                        <p>A web app temperature converter solution, built for accurate weather conversions,
+                            scalability, and performance.</p>
                         <div class="project-tech">
                             <span>HTML5</span>
                             <span>CSS3</span>
-                            <span>Javascript</span>
+                            <span>JavaScript</span>
                         </div>
-                        <!-- <a href="#" class="btn btn-sm btn-outline">Case Study <i class="fas fa-arrow-right"></i></a> -->
                     </div>
                 </div>
-
                 <!-- Project 2 -->
                 <div class="project-card" data-category="fullstack">
                     <div class="project-image">
-                        <img src="images/number_guess.png" alt="Number Guessing Game Project">
+                        <img src="images/number_guess.png" alt="Number Guessing Game Project" loading="lazy">
                         <div class="project-links">
                             <a href="https://prodigy-sd-02-3nab.vercel.app/" class="project-link" aria-label="Live Demo"
-                                target="_blank">
+                                target="_blank" rel="noopener noreferrer">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                             <a href="https://github.com/Ashley-Programmer/PRODIGY_SD_02" class="project-link"
-                                aria-label="View Code" target="_blank">
+                                aria-label="View Code" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
                     <div class="project-info">
                         <h3>Number Guessing Game</h3>
-                        <p>
-                            A simple & interactive web-based number
-                            guessing game.
-                            Challenges a player to guess the computer's
-                            secret number between 1 and 100.
-                        </p>
+                        <p>A simple & interactive web-based number guessing game. Challenges a player to guess the
+                            computer's secret number between 1 and 100.</p>
                         <div class="project-tech">
                             <span>HTML5</span>
                             <span>CSS3</span>
-                            <span>Javascript</span>
+                            <span>JavaScript</span>
                         </div>
-                        <!-- <a href="#" class="btn btn-sm btn-outline">Case Study <i class="fas fa-arrow-right"></i></a> -->
                     </div>
                 </div>
-
                 <!-- Project 3 -->
                 <div class="project-card" data-category="frontend">
                     <div class="project-image">
-                        <img src="project_images/AI-Assistant.png" alt="AI Assistant Chatbot Project">
+                        <img src="project_images/AI-Assistant.png" alt="AI Assistant Chatbot Project" loading="lazy">
                         <div class="project-links">
                             <a href="https://chatbot-reactjs-beta.vercel.app/" class="project-link"
-                                aria-label="Live Demo" target="_blank">
+                                aria-label="Live Demo" target="_blank" rel="noopener noreferrer">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                             <a href="https://github.com/Ashley-Programmer/ReactJs-ChatBot" class="project-link"
-                                aria-label="View Code" target="_blank">
+                                aria-label="View Code" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
                     <div class="project-info">
                         <h3>AI Assistant Chatbot</h3>
-                        <p>
-                            A conversational AI chatbot built with React
-                            and powered by Groq's lightning-fast
-                            inference API.
-                            Features real-time messaging, context-aware
-                            responses, and an intuitive user interface
-                            designed
-                            for seamless human-AI interaction.
-                        </p>
+                        <p>A conversational AI chatbot built with React and powered by Groq's lightning-fast inference
+                            API. Features real-time messaging, context-aware responses, and an intuitive user interface
+                            designed for seamless human-AI interaction.</p>
                         <div class="project-tech">
                             <span>ReactJs</span>
                             <span>Groq API</span>
                         </div>
-                        <!-- <a href="#" class="btn btn-sm btn-outline">Case Study <i class="fas fa-arrow-right"></i></a> -->
                     </div>
                 </div>
-
-                <!-- Project 4 to be added in the long run -->
             </div>
-
             <div class="text-center mt-5">
-                <a href="https://github.com/Ashley-Programmer" target="_blank" class="btn btn-primary">
+                <a href="https://github.com/Ashley-Programmer" target="_blank" class="btn btn-primary"
+                    rel="noopener noreferrer">
                     View More on GitHub <i class="fab fa-github"></i>
                 </a>
             </div>
@@ -852,92 +754,61 @@
                 <h2 class="section-title">Work Experience</h2>
                 <div class="divider"></div>
             </div>
-
             <div class="timeline">
                 <!-- Experience 1 -->
                 <div class="timeline-item">
-                    <div class="timeline-date">June 2024 - June
-                        2024</div>
+                    <div class="timeline-date">June 2024 - June 2024</div>
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <h3>Software Developer Intern</h3>
-                            <span class="timeline-company">Prodigy
-                                InfoTech, Remote</span>
+                            <span class="timeline-company">Prodigy InfoTech, Remote</span>
                         </div>
                         <ul class="timeline-description">
-                            <li>
-                                Led development of scalable web
-                                applications using Django and React
-                                including Mern Stack,
-                                improving system efficiency by 30%
-                            </li>
-                            <li>
-                                Learned and implemented CI/CD pipelines
-                                for streamlined deployments.
-                            </li>
+                            <li>Led development of scalable web applications using Django and React including Mern
+                                Stack, improving system efficiency by 30%</li>
+                            <li>Learned and implemented CI/CD pipelines for streamlined deployments.</li>
                         </ul>
                         <div class="timeline-tech">
                             <span>ReactJs</span>
                             <span>MernStack</span>
                             <span>HTML5</span>
                             <span>CSS3</span>
-                            <span>Javascript</span>
+                            <span>JavaScript</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- Experience 2 - Python Dev -->
+                <!-- Experience 2 -->
                 <div class="timeline-item">
-                    <div class="timeline-date">June 2024 - June
-                        2024</div>
+                    <div class="timeline-date">June 2024 - June 2024</div>
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <h3>Python Developer</h3>
-                            <span class="timeline-company">Oasis
-                                InfoByte, Remote</span>
+                            <span class="timeline-company">Oasis InfoByte, Remote</span>
                         </div>
                         <ul class="timeline-description">
-                            <li>
-                                Developed and maintained web
-                                applications using Python, JavaScript,
-                                and PostgreSQL
-                            </li>
-                            <li>
-                                Collaborated with cross-functional teams
-                                to deliver projects under tight
-                                deadlines,
-                                achieving 95% client satisfaction.
-                            </li>
+                            <li>Developed and maintained web applications using Python, JavaScript, and PostgreSQL</li>
+                            <li>Collaborated with cross-functional teams to deliver projects under tight deadlines,
+                                achieving 95% client satisfaction.</li>
                         </ul>
                         <div class="timeline-tech">
                             <span>Python</span>
-                            <span>Javascript</span>
+                            <span>JavaScript</span>
                             <span>PostgreSQL</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- Experience 3 - IT Technician and Junior Software Dev Intern -->
+                <!-- Experience 3 -->
                 <div class="timeline-item">
                     <div class="timeline-date">June 2025 - Present</div>
                     <div class="timeline-content">
                         <div class="timeline-header">
-                            <h3>IT Technician & Junior Software
-                                Developer Intern</h3>
-                            <span class="timeline-company">Eullafied
-                                Tech Solutions, North West -
-                                Onsite</span>
+                            <h3>IT Technician & Junior Software Developer Intern</h3>
+                            <span class="timeline-company">Eullafied Tech Solutions, North West - Onsite</span>
                         </div>
                         <ul class="timeline-description">
-                            <li>
-                                Maintained computers on the same
-                                network, servers, configured websites
-                                for various schools.
-                            </li>
-                            <li>
-                                Contributed to backend development with
-                                PHP, enhancing application performance.
-                            </li>
+                            <li>Maintained computers on the same network, servers, configured websites for various
+                                schools.</li>
+                            <li>Contributed to backend development with PHP, enhancing application performance.</li>
                         </ul>
                         <div class="timeline-tech">
                             <span>PHP</span>
@@ -946,41 +817,24 @@
                             <span>Team Leadership</span>
                             <span>HTML5</span>
                             <span>CSS3</span>
-                            <span>Javascript</span>
+                            <span>JavaScript</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- Experience 3 - AI Software Developer -->
+                <!-- Experience 4 -->
                 <div class="timeline-item">
                     <div class="timeline-date">July 2025 - Present</div>
                     <div class="timeline-content">
                         <div class="timeline-header">
                             <h3>AI Software Developer</h3>
-                            <span class="timeline-company">AI Global
-                                Networks, JHB - Hybrid</span>
+                            <span class="timeline-company">AI Global Networks, JHB - Hybrid</span>
                         </div>
                         <ul class="timeline-description">
-                            <li>
-                                Responsible for developing scalable
-                                applications with integrated AI
-                                features.
-                            </li>
-                            <li>
-                                Focused on improving application
-                                performance and efficiency.
-                            </li>
-                            <li>
-                                Have implemented robust testing
-                                protocols to ensure high-quality
-                                software.
-                            </li>
-                            <li>
-                                Contributing to to the development of
-                                voice recognition systems, intelligent
-                                chatbots,
-                                and advanced websites.
-                            </li>
+                            <li>Responsible for developing scalable applications with integrated AI features.</li>
+                            <li>Focused on improving application performance and efficiency.</li>
+                            <li>Have implemented robust testing protocols to ensure high-quality software.</li>
+                            <li>Contributing to the development of voice recognition systems, intelligent chatbots, and
+                                advanced websites.</li>
                         </ul>
                         <div class="timeline-tech">
                             <span>Python</span>
@@ -1004,12 +858,10 @@
                 <h2 class="section-title">Contact Me</h2>
                 <div class="divider"></div>
                 <p class="section-description">
-                    Have a project in mind or want to discuss potential
-                    opportunities?
-                    Feel free to reach out - I'd love to hear from you!
+                    Have a project in mind or want to discuss potential opportunities? Feel free to reach out - I'd love
+                    to hear from you!
                 </p>
             </div>
-
             <div class="row">
                 <div class="col-lg-5 contact-info">
                     <div class="contact-info-item">
@@ -1021,7 +873,6 @@
                             <a href="mailto:motsieashley31@gmail.com">motsieashley31@gmail.com</a>
                         </div>
                     </div>
-
                     <div class="contact-info-item">
                         <div class="contact-icon">
                             <i class="fas fa-map-marker-alt"></i>
@@ -1031,7 +882,6 @@
                             <span>North West, South Africa</span>
                         </div>
                     </div>
-
                     <div class="contact-info-item">
                         <div class="contact-icon">
                             <i class="fas fa-phone-alt"></i>
@@ -1041,49 +891,47 @@
                             <a href="tel:+27760932272">(+27)760932272</a>
                         </div>
                     </div>
-
                     <div class="contact-social">
                         <h4>Follow Me</h4>
                         <div class="social-links">
-                            <a href="https://github.com/Ashley-Programmer" target="_blank" aria-label
-                                quenching="GitHub">
+                            <a href="https://github.com/Ashley-Programmer" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub">
                                 <i class="fab fa-github"></i>
                             </a>
                             <a href="https://www.linkedin.com/in/ashley-koketso-motsie-718686263/" target="_blank"
-                                aria-label="LinkedIn">
+                                rel="noopener noreferrer" aria-label="LinkedIn">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="https://tiktok.com/@ashley_programmer" target="_blank" aria-label="TikTok">
+                            <a href="https://tiktok.com/@ashley_programmer" target="_blank" rel="noopener noreferrer"
+                                aria-label="TikTok">
                                 <i class="fab fa-tiktok"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-7 contact-form">
                     <form id="contactForm" class="needs-validation" novalidate>
                         <div class="row">
                             <div class="col-md-6 form-group">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                                <div class="invalid-feedback">Please
-                                    enter your name</div>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required
+                                    aria-describedby="nameFeedback">
+                                <div id="nameFeedback" class="invalid-feedback">Please enter your name</div>
                             </div>
                             <div class="col-md-6 form-group">
-                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-                                <div class="invalid-feedback">Please
-                                    enter a valid email</div>
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required
+                                    aria-describedby="emailFeedback">
+                                <div id="emailFeedback" class="invalid-feedback">Please enter a valid email</div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
-                            <div class="invalid-feedback">Please enter a
-                                subject</div>
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" required
+                                aria-describedby="subjectFeedback">
+                            <div id="subjectFeedback" class="invalid-feedback">Please enter a subject</div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"
-                                required></textarea>
-                            <div class="invalid-feedback">Please enter
-                                your message</div>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required
+                                aria-describedby="messageFeedback"></textarea>
+                            <div id="messageFeedback" class="invalid-feedback">Please enter your message</div>
                         </div>
                         <button type="submit" class="btn btn-primary">
                             Send Message <i class="fas fa-paper-plane"></i>
@@ -1100,11 +948,8 @@
             <div class="footer-content">
                 <div class="footer-brand">
                     <a href="#hero" class="footer-logo">AK</a>
-                    <p>Passionate developer creating innovative
-                        solutions and bringing ideas to life through
-                        code.</p>
+                    <p>Passionate developer creating innovative solutions and bringing ideas to life through code.</p>
                 </div>
-
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4>Quick Links</h4>
@@ -1115,40 +960,38 @@
                             <li><a href="#projects">Projects</a></li>
                         </ul>
                     </div>
-
                     <div class="footer-column">
                         <h4>Resources</h4>
                         <ul>
                             <li><a href="assets/Ashley Motsie's Resume_20250807_043908_0000.pdf" download>Resume</a>
                             </li>
-                            <li><a href="https://github.com/Ashley-Programmer" target="_blank">GitHub</a></li>
+                            <li><a href="https://github.com/Ashley-Programmer" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
-
                     <div class="footer-column">
                         <h4>Connect</h4>
                         <ul>
-                            <li><a href="https://www.linkedin.com/in/ashley-koketso-motsie-718686263/"
-                                    target="_blank">LinkedIn</a></li>
-                            <li><a href="https://tiktok.com/@ashley_programmer" target="_blank">TikTok</a></li>
-                            <li><a href="https://github.com/Ashley-Programmer" target="_blank">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/ashley-koketso-motsie-718686263/" target="_blank"
+                                    rel="noopener noreferrer">LinkedIn</a></li>
+                            <li><a href="https://tiktok.com/@ashley_programmer" target="_blank"
+                                    rel="noopener noreferrer">TikTok</a></li>
+                            <li><a href="https://github.com/Ashley-Programmer" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-
             <div class="footer-bottom">
                 <div class="copyright">
-                    &copy; <span id="year"></span> Ashley K Motsie. All
-                    rights reserved.
+                    &copy; <span id="year"></span> Ashley K Motsie. All rights reserved.
                 </div>
                 <div class="footer-credits">
                     Made with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i> in South Africa
                 </div>
             </div>
         </div>
-
         <!-- Back to Top Button -->
         <a href="#hero" class="back-to-top" aria-label="Back to top">
             <i class="fas fa-arrow-up"></i>
@@ -1158,10 +1001,9 @@
     <!-- JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
     <script src="src/main.js"></script>
 </body>
 
