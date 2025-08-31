@@ -1079,9 +1079,9 @@ ul {
 /* Enhanced Timeline Styles */
 .timeline {
   position: relative;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 .timeline::before {
@@ -1098,6 +1098,7 @@ ul {
     var(--accent-hover)
   );
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(50, 127, 252, 0.3);
 }
 
 .timeline-item {
@@ -1118,7 +1119,7 @@ ul {
 .timeline-date {
   position: absolute;
   top: 15px;
-  right: -100px;
+  right: -35px;
   font-size: 0.9rem;
   font-weight: 700;
   color: var(--accent-color);
@@ -1132,7 +1133,7 @@ ul {
 
 .timeline-item:nth-child(even) .timeline-date {
   right: auto;
-  left: -100px;
+  left: -95px;
 }
 
 .timeline-content {
@@ -1144,6 +1145,7 @@ ul {
   box-shadow: var(--box-shadow);
   transition: var(--transition);
   border-left: 4px solid var(--accent-color);
+  overflow: hidden;
 }
 
 .timeline-item:nth-child(even) .timeline-content {
@@ -1273,7 +1275,7 @@ ul {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .timeline::before {
-    left: 31px;
+    left: 40px;
   }
 
   .timeline-item,
@@ -1285,11 +1287,15 @@ ul {
 
   .timeline-content {
     width: 100%;
+    border-right: none;
+    border-left: 5px solid var(--accent-color);
   }
 
   .timeline-date {
     right: auto;
-    left: -30px;
+    left: 0;
+    top: -50px;
+    margin-bottom: 1rem;
   }
 
   .timeline-item::after,
