@@ -332,6 +332,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 opacity: 0, x: i % 2 === 0 ? -50 : 50, duration: 0.5, delay: i * 0.1
             });
         });
+
+        gsap.utils.toArray('.timeline-item').forEach((item, i) => {
+            gsap.from(item, {
+                scrollTrigger: {
+                    trigger: item,
+                    start: 'top 80%',
+                    toggleActions: 'play none none none'
+                },
+                opacity: 0,
+                y: 50,
+                duration: 0.8,
+                delay: i * 0.2,
+                ease: 'power2.out'
+            });
+        });
     }
 
     // ==================== Footer Year ====================
