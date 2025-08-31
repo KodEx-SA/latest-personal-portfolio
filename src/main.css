@@ -645,12 +645,15 @@ ul {
   display: flex;
   gap: 1rem;
   margin-bottom: 2.5rem;
-  z-index: 10;
+  z-index: 20;
+  position: relative;
 }
 
 .hero-social {
   display: flex;
   gap: 1rem;
+  z-index: 20;
+  position: relative;
 }
 
 .hero-social a {
@@ -681,6 +684,7 @@ ul {
   z-index: 1;
   background-color: transparent;
   opacity: 0.8;
+  pointer-events: none;
 }
 
 /* Scroll Indicator */
@@ -1295,7 +1299,7 @@ ul {
     right: auto;
     left: 0;
     top: -50px;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem 0;
   }
 
   .timeline-item::after,
