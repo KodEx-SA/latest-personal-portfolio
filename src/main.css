@@ -315,16 +315,33 @@ ul {
 
 .navbar-toggler {
   border: none;
-  padding: var(--space-xs);
-  color: var(--text-primary);
+  padding: 0;
+  width: 30px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
-.navbar-toggler:focus {
-  box-shadow: none;
+.navbar-toggler .line {
+  width: 100%;
+  height: 3px;
+  background-color: var(--text-primary);
+  transition: all var(--transition-fast);
+  border-radius: var(--radius-sm);
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+.navbar-toggler[aria-expanded="true"] .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+
+.navbar-toggler[aria-expanded="true"] .line:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -8px);
 }
 
 /* Recommended Wave Animation */
@@ -628,12 +645,15 @@ ul {
   display: flex;
   gap: 1rem;
   margin-bottom: 2.5rem;
-  z-index: 10;
+  z-index: 20;
+  position: relative;
 }
 
 .hero-social {
   display: flex;
   gap: 1rem;
+  z-index: 20;
+  position: relative;
 }
 
 .hero-social a {
@@ -664,6 +684,7 @@ ul {
   z-index: 1;
   background-color: transparent;
   opacity: 0.8;
+  pointer-events: none;
 }
 
 /* Scroll Indicator */
@@ -1062,9 +1083,9 @@ ul {
 /* Enhanced Timeline Styles */
 .timeline {
   position: relative;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 .timeline::before {
@@ -1081,6 +1102,7 @@ ul {
     var(--accent-hover)
   );
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(50, 127, 252, 0.3);
 }
 
 .timeline-item {
@@ -1101,7 +1123,7 @@ ul {
 .timeline-date {
   position: absolute;
   top: 15px;
-  right: -100px;
+  right: -35px;
   font-size: 0.9rem;
   font-weight: 700;
   color: var(--accent-color);
@@ -1115,7 +1137,7 @@ ul {
 
 .timeline-item:nth-child(even) .timeline-date {
   right: auto;
-  left: -100px;
+  left: -95px;
 }
 
 .timeline-content {
@@ -1127,6 +1149,7 @@ ul {
   box-shadow: var(--box-shadow);
   transition: var(--transition);
   border-left: 4px solid var(--accent-color);
+  overflow: hidden;
 }
 
 .timeline-item:nth-child(even) .timeline-content {
@@ -1156,6 +1179,28 @@ ul {
 .timeline-content:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.timeline-icon {
+  position: absolute;
+  top: 20px;
+  left: -60px;
+  width: 40px;
+  height: 40px;
+  background: var(--accent-color);
+  color: var(--text-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: var(--shadow-md);
+  z-index: 2;
+}
+
+.timeline-item:nth-child(even) .timeline-icon {
+  left: auto;
+  right: -60px;
 }
 
 .timeline-header h3 {
@@ -1234,7 +1279,7 @@ ul {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .timeline::before {
-    left: 31px;
+    left: 40px;
   }
 
   .timeline-item,
@@ -1246,11 +1291,15 @@ ul {
 
   .timeline-content {
     width: 100%;
+    border-right: none;
+    border-left: 5px solid var(--accent-color);
   }
 
   .timeline-date {
     right: auto;
-    left: -30px;
+    left: 0;
+    top: -50px;
+    margin-bottom: 1rem 0;
   }
 
   .timeline-item::after,
@@ -1265,6 +1314,15 @@ ul {
     left: -10px;
     border-left: none;
     border-right: 10px solid var(--card-bg);
+  }
+
+  .timeline-icon {
+    left: -50px;
+  }
+
+  .timeline-item:nth-child(even) .timeline-icon {
+    right: auto;
+    left: -50px;
   }
 }
 
@@ -1728,6 +1786,30 @@ textarea.form-control {
 .footer-brand p {
   color: var(--text-primary);
   font-size: 0.9375rem;
+}
+
+.footer-social {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--card-bg);
+  color: var(--accent-color);
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.footer-social a:hover {
+  background: var(--accent-color);
+  color: var(--text-primary);
+  transform: translateY(-2px);
 }
 
 .footer-links {
