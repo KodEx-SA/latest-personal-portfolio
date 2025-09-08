@@ -247,9 +247,21 @@ ul {
   transform: translateY(-2px);
 }
 
+/* Scroll Progress Bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-color), var(--accent-hover));
+  transform-origin: left;
+  z-index: 1000;
+  transition: transform 0.1s ease;
+}
+
 /* Enhanced Navbar */
 .navbar {
-  /* padding: 1.5rem 2rem; */
   transition: var(--transition);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
@@ -258,7 +270,6 @@ ul {
 }
 
 .navbar.scrolled {
-  /* padding: 1rem 2rem; */
   background: var(--darker-bg) !important;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
@@ -2197,5 +2208,55 @@ body {
 
   textarea.form-control {
     min-height: 120px;
+  }
+}
+
+/* Cyberpunk Marquee Styles */
+.cyberpunk-marquee {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #ff0080, #00ff80, #8000ff, #ff8000);
+  background-size: 400% 400%;
+  animation: gradientShift 4s ease infinite;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.5);
+}
+
+.marquee-content {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+.marquee-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+  margin-right: 50px;
+  font-family: 'Courier New', monospace;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
