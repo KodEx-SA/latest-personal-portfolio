@@ -54,8 +54,6 @@
             <div class="preloader-progress"></div>
         </div>
     </div>
-    <!-- Floating Particles Background -->
-    <div id="particles-js"></div>
 
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
@@ -104,7 +102,7 @@
                                 Motsie</span>
                         </h1>
                         <h2 class="hero-subtitle">
-                            My profession is <span class="typing-text"></span>
+                            A passionate <span class="typing-text"></span>
                         </h2>
                         <p class="hero-description">
                             I architect and develop full-stack web
@@ -140,25 +138,23 @@
                         <div class="profile-image-container">
                             <img src="profile_images/my_pic.png" alt="Ashley K Motsie" class="profile-image">
                             <div class="profile-glow"></div>
+                            <!-- Tech Icons -->
                             <div class="tech-icons">
-                                <!-- Tech icons here -->
-                                <div class="tech-icons">
-                                    <div class="icon react" data-tooltip="React">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                                            alt="React">
-                                    </div>
-                                    <div class="icon js" data-tooltip="JavaScript">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                            alt="JavaScript">
-                                    </div>
-                                    <div class="icon mongodb" data-tooltip="MongoDB">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-                                            alt="MongoDB">
-                                    </div>
-                                    <div class="icon python" data-tooltip="Python">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                                            alt="Python">
-                                    </div>
+                                <div class="icon react" data-tooltip="React">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                                        alt="React">
+                                </div>
+                                <div class="icon js" data-tooltip="JavaScript">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                                        alt="JavaScript">
+                                </div>
+                                <div class="icon mongodb" data-tooltip="MongoDB">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                                        alt="MongoDB">
+                                </div>
+                                <div class="icon python" data-tooltip="Python">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                                        alt="Python">
                                 </div>
                             </div>
                         </div>
@@ -179,6 +175,7 @@
                     </div>
                 </a>
             </div>
+        </div>
     </section>
 
     <!-- About Section -->
@@ -327,7 +324,7 @@
                                     <div class="timeline-item">
                                         <div class="timeline-date">2025</div>
                                         <div class="timeline-content">
-                                            <h4>full-stack
+                                            <h4>Full-Stack
                                                 Development</h4>
                                             <p>
                                                 Started a full-stack
@@ -766,7 +763,6 @@
                             <span>CSS3</span>
                             <span>Javascript</span>
                         </div>
-                        <!-- <a href="#" class="btn btn-sm btn-outline">Case Study <i class="fas fa-arrow-right"></i></a> -->
                     </div>
                 </div>
 
@@ -798,7 +794,6 @@
                             <span>CSS3</span>
                             <span>Javascript</span>
                         </div>
-                        <!-- <a href="#" class="btn btn-sm btn-outline">Case Study <i class="fas fa-arrow-right"></i></a> -->
                     </div>
                 </div>
 
@@ -832,11 +827,8 @@
                             <span>ReactJs</span>
                             <span>Groq API</span>
                         </div>
-                        <!-- <a href="#" class="btn btn-sm btn-outline">Case Study <i class="fas fa-arrow-right"></i></a> -->
                     </div>
                 </div>
-
-                <!-- Project 4 to be added in the long run -->
             </div>
 
             <div class="text-center mt-5">
@@ -969,7 +961,7 @@
                     </div>
                 </div>
 
-                <!-- Experience 3 - AI Software Developer -->
+                <!-- Experience 4 - AI Software Developer -->
                 <div class="timeline-item">
                     <div class="timeline-date">July 2025 - Present</div>
                     <div class="timeline-content">
@@ -995,7 +987,7 @@
                                 software.
                             </li>
                             <li>
-                                Contributing to to the development of
+                                Contributing to the development of
                                 voice recognition systems, intelligent
                                 chatbots,
                                 and advanced websites.
@@ -1016,7 +1008,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section with Chatbot -->
     <section id="contact" class="contact-section">
         <div class="container">
             <div class="section-header">
@@ -1024,8 +1016,7 @@
                 <div class="divider"></div>
                 <p class="section-description">
                     Have a project in mind or want to discuss potential
-                    opportunities?
-                    Feel free to reach out - I'd love to hear from you!
+                    opportunities? Chat with my AI assistant below!
                 </p>
             </div>
 
@@ -1079,34 +1070,19 @@
                 </div>
 
                 <div class="col-lg-7 contact-form">
-                    <form id="contactForm" class="needs-validation" novalidate>
-                        <div class="row">
-                            <div class="col-md-6 form-group">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                                <div class="invalid-feedback">Please
-                                    enter your name</div>
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-                                <div class="invalid-feedback">Please
-                                    enter a valid email</div>
+                    <div class="chatbot">
+                        <div class="chatbot-messages" id="chatbotMessages">
+                            <div class="message bot">
+                                <span>Hello! I'm Ashley's AI assistant. What's your name?</span>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="subject" placeholder="Subject" required>
-                            <div class="invalid-feedback">Please enter a
-                                subject</div>
+                        <div class="chatbot-input" id="chatbotInput">
+                            <input type="text" id="chatbotInputField" class="form-control" placeholder="Type your response...">
+                            <button onclick="sendMessage()" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
                         </div>
-                        <div class="form-group">
-                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"
-                                required></textarea>
-                            <div class="invalid-feedback">Please enter
-                                your message</div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            Send Message <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
